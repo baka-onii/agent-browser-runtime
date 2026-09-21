@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-browser-runtime"
+version = "0.1.0"
+description = "Python client for the Agent Browser Runtime loopback JSON-RPC server"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agent_browser_runtime*"]

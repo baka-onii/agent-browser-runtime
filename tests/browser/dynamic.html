@@ -1,0 +1,10 @@
+<!doctype html><html><body>
+<button>Click me</button>
+<input aria-label="Search" type="text">
+<script>
+setTimeout(() => {
+  const old = document.querySelector("button");
+  old.replaceWith(old.cloneNode(true));
+}, 100);
+</script>
+</body></html>

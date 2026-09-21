@@ -1,0 +1,12 @@
+<!doctype html><html><body>
+<div id="out">Hello</div>
+<script>
+const parts = ["Hello", "Hello world", "Hello world this", "Hello world this is", "Hello world this is complete"];
+let i = 0;
+const t = setInterval(() => {
+  i++;
+  if (i >= parts.length) { clearInterval(t); return; }
+  document.getElementById("out").textContent = parts[i];
+}, 200);
+</script>
+</body></html>

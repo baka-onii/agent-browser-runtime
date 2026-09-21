@@ -1,0 +1,9 @@
+<!doctype html><html><body>
+<h1>Dialogs</h1>
+<button id="a">Show alert</button>
+<button id="c">Show confirm</button>
+<script>
+document.getElementById("a").onclick = () => { alert("hello-alert"); document.title = "alerted"; };
+document.getElementById("c").onclick = () => { const r = confirm("are you sure?"); document.title = r ? "confirmed" : "dismissed"; };
+</script>
+</body></html>

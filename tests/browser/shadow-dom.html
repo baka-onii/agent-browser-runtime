@@ -1,0 +1,9 @@
+<!doctype html><html><body>
+<div id="host"></div>
+<script>
+const host = document.getElementById("host");
+const root = host.attachShadow({ mode: "open" });
+root.innerHTML = "<button>Shadow button</button>";
+// MVP: shadow controls are absent from observation; assert clean absence, no crash.
+</script>
+</body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html><body>
+<h1>Upload</h1>
+<form><input type="file" id="f" aria-label="Choose file"><span id="n">none</span></form>
+<script>
+document.getElementById("f").addEventListener("change", e => {
+  document.getElementById("n").textContent = e.target.files.length + " file(s): " + (e.target.files[0]?.name ?? "");
+});
+</script>
+</body></html>
